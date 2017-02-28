@@ -15,12 +15,23 @@ Week passed since our first meeting, it is good time to do some recap!
 
 27 people showed up, including organizers and two presenters!
 <p>
-We started with Kaarel Moppel from Cybertec reminding us about basics of database monitoring. Important is to cover all levels including both operating system and, PostgreSQL land. When tracking bunch of different metrics it is easy to forget to monitor monitoring itself – because if it is not working you will not get alert in time.  PostgreSQL community has lots of tools available, and Karel gave us demo of some of them, explaining meaning and importance of some key metrics. Cybertec’s pgwatch2 was showcased as possibly simplest entry into monitoring. It is distributed as Docker container and starts giving insight of your cluster almost instantly.
+We started with Kaarel Moppel [slides <a href="PostgreSQL_monitoring.pdf">.pdf</a>] from Cybertec reminding us about basics of database monitoring. Important is to cover all levels including both operating system and, PostgreSQL land. When tracking bunch of different metrics it is easy to forget to monitor monitoring itself – because if it is not working you will not get alert in time.  PostgreSQL community has lots of tools available, and Karel gave us demo of some of them, explaining meaning and importance of some key metrics. Cybertec’s pgwatch2 was showcased as possibly simplest entry into monitoring. It is distributed as Docker container and starts giving insight of your cluster almost instantly.
 <p>
-In short break we enjoyed cozy Toggl office had a few interesting discussions on database topics. And this led us into second talk of the evening - Ants Aasma introduced us to tool named Patroni (developed by Zalando). This tool aims to make High Availability PostgreSQL easy. What node should be current master – this is one of most complex HA questions. Instead of trying to implement own solution, Patroni delegates this task to some established consensus algorithm providers – etcd, Consul or Zookeeper. Building on solid ground tool adds health checks, automated promotion and HTTP API. Two presented features caused extra positive feedback from audience: automated reuse of old master as standby of new one, and ability to script whole setup with simple and short YML file. Also to keep things simple – Patroni does not deal with routing connections to current master – one should use load balancer or script something using provided hooks.
+In short break we enjoyed cozy Toggl office had a few interesting discussions on database topics. And this led us into second talk of the evening - Ants Aasma introduced us to tool named Patroni (developed by Zalando) [slides <a href="easy-postgres-clustering-with-patroni.md">.md</a> <a href="easy-postgres-clustering-with-patroni.pdf">.pdf</a>]. This tool aims to make High Availability PostgreSQL easy. What node should be current master – this is one of most complex HA questions. Instead of trying to implement own solution, Patroni delegates this task to some established consensus algorithm providers – etcd, Consul or Zookeeper. Building on solid ground tool adds health checks, automated promotion and HTTP API. Two presented features caused extra positive feedback from audience: automated reuse of old master as standby of new one, and ability to script whole setup with simple and short YML file. Also to keep things simple – Patroni does not deal with routing connections to current master – one should use load balancer or script something using provided hooks.
 <p>
 This concluded our first meeting; plan is to meet again in 3 months, please share information about pgug.ee so that more people would be able to join us next time. We are looking for speakers, you don’t have to earn money by doing PostgreSQL consultancy, user stories, success stories, failures and reasons to switch to “any other data storage” are all more than welcome!
 
-  </body> 
-  </html> 
-  
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290833-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
