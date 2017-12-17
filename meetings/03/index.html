@@ -5,36 +5,95 @@
     <title>PGUG.ee meeting #3</title>
 </head>
 <body>
-<p>
-    <p>2017.12.08!</p>
-    <p>
-      On this quiet evening we will be visited by CEO of Cybertec -
-      Hans-Jürgen Schönig. He presents things in simple, understandable yet
-      very charming and bit funny manner. His talk is titled "Analyzing
-      large data sets". In this talk we get an overview about means how to
-      handle a lot of data using means that PostgreSQL has built in.
-      <br/>
-<br/>
-      PostgreSQL is good everywhere, but will it blend? We bring most
-      advanced open source database in the kitchen. "PostgreSQL Carbonara"
-      is lightning talk that will be presented by Federico Campoli from
-      TransferWise. Note: Federico will be first person ever who has given
-      two talks in our local group!
-      <br/>
-      <br/>
 
-      NoSQL is still buzzword; we supposed to trade in ACID for usability…
-      but instead SQL replied with inclusion of SQL/JSON in ISO/IEC
-      9075:2016. Why NoSQL matters, and how to implement common scenarios in
-      PostgreSQL will be presented in talk titled "PostgreSQL as NoSQL
-      Database". Presenter Hannu Krosing from 2ndQuadrant is well known in
-      local community.
-    </p>
- <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>
+    Our previous meeting was on 8th December 2017. Our biggest thanks to
+    <a href="https://transferwise.com/">TransferWise</a> for providing big and cozy
+    meeting place with very fine
+    selection of snacks. We used available space well – third event was
+    biggest so far with 58 people registering and 50 people actually
+    attending. As very pleasant surprise, (IP address based)
+    <a href="pgug.ee-nr3-bycountry.png">map of ticket
+        sales</a> showed that we actually having international event with some
+    people attending from other countries.</p>
+
+<p>
+    Agenda was solid – our first speaker <b>Hans-Jürgen Schönig</b> from
+    <a href="https://www.cybertec-postgresql.com/en/">CYBERTEC</a>
+    used one of databases that he
+    had to support just before presenting to us as inspiration for his
+    talk: <b>“Analyzing large data sets”</b>&nbsp;(<a
+        href="pgug_ee_hans_jurgen_large_datasets.pdf">pdf</a>).
+    Take real world examples of “seemingly big data situations” that look very familiar. Combine them
+    with actual effective solutions. Served with unique charm of Hans… I’d
+    say that this talk was very interesting for everyone, irrelevant of
+    actual PostgreSQL experience.
+</p>
+
+<p>
+    As communication and free form chatting is very important part of
+    meetings we had extra-long break time. To made it even more
+    entertaining, CYBERTEC did bring
+    <a href="https://www.cybertec-postgresql.com/en/how-we-built-our-cluster-in-a-box/">“cluster in a box”</a>
+    demo case showing how robust and easy failover can be with help of
+    Patroni. (see about Patroni on
+    <a href="pgug.ee/meetings/01">first meeting</a>, earlier
+    this year (<a href="https://youtu.be/4N2p5oscCA4">youtube</a>). Break
+    was also very tasty one, so I’d like to thank TransferWise once more,
+    for being great host for the event.
+</p>
+<p>On topic of food we continued with
+    <b>Federico Campoli</b>, who achieved remarkable “First person to give more
+    than one talk in pgug.ee”, presenting us with <b>"PostgreSQL Carbonara"</b>&nbsp(<a
+            href="https://gist.github.com/the4thdoctor/b347c18f341b1c35de8e4895c3e29496">gist</a>).
+    This tiny talk can be used as simple demo for planning and structuring
+    data in PostgreSQL for beginners.
+</p>
+<p>
+    Last but not least, local PostgreSQL star <b>Hannu Krosing</b> gave really
+    nice overview of <b>PostgreSQL in NoSQL world</b>. Good overview, going much
+    deeper than other JSON/schemaless talks. Performance benchmarks and
+    links to more details and useful tools yield something that is of
+    interest also to more advanced database users. Whole talk was
+    explained in simple, easy to understand language, which maybe will
+    allow beginners to make educated decisions when it comes to data
+    storage.
+
+    As usual, I’d like to conclude with some links on what’s next:
+
+    <ul>
+        <li>
+            Signup to our <b>mailing list</b> at
+            <a href="https://groups.google.com/d/forum/pgug-ee">google groups</a>
+        </li>
+
+        <li><b>Photos</b> from event are at
+    <a href="https://photos.app.goo.gl/u7ciewkOiM5R52aZ2">Google Photos</a>, and
+    <b>you</b> could upload yours photos there too!
+</li>
+<li>
+    Consider if you have something interesting to talk about and
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeypqwYeevnHHrjlhzzSqGRuAVjQvCWr0oMmj_44VSSAFjXNw/viewform">
+        submit talk
+    </a>
+</li>
+<li>
+    Bookmark our website <a href="http://pgug.ee">pgug.ee</a>
+</li>
+</ul>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-87290833-1', 'auto');
     ga('send', 'pageview');
