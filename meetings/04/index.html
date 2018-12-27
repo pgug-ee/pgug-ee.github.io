@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PGUG.ee meeting #3</title>
+</head>
+<body>
+
+<p>
+As traditional, here a short recap on the last PGUG meetup evening, 4th by the number.
+</p>
+<p>
+Turnout was quite solid taking into account relatively short notice and talks being not so 100% Postgres, with about 40 people attending. The host this time was <a href="https://monese.com/" target="_blank">Monese</a>, a fin-tech start-up (or not so start-up anymore actually)...and boy did they hosted us - mountains of pizza/cake and rivers of craft-beer/juices :) Much appeciated!
+</p>
+<p>
+The presentations part was warmed up by Jonas Kiiver, VP of engineering at Monese, kindly reminding us that they're growing and have loads of interesting engineering challenges worth checking out.
+</p>
+<p>
+We started with Märten Veskimäe (Lead data scientist at Monese) who gave a nice introduction into the world of most typical Machine Learning algorithms. And specifically in which format the input data is usually represented. He started of course from simple tabular format but soon we learned that for more complex stuff like image processing with Convolutional Neural Networks and sliding windows it's getting quite hard for normal tables and for Graph usecases (e.g. Fraud detection) one should really try out some specific DBs like Neo4j.
+</p>
+<p>
+Second talk by Kaarel Moppel from Cybertec PostgreSQL consulting was the only pure Postgres talk of the evening, covering features and use cases of Stored Procedures in Postgres. After explainin the basic input/output, looping over datasets, the main accent was on using them for performance tuning (setting planner constants and optimizer hints) and Data Logic - i.e. creating another abstraction layer, so that data structures could be changed transparently to the application when performance starts to hurt.
+</p>
+<p>
+Last talk was held by Lavrenti Tšudakov of Avalanche Laboratory and it concentrated on the people side of two Data Warehousing projects, where some historic weird choices had to be managed/re-implemented. Accent by Lavrenti here was on the difficulty of making estimates on "legacy systems" - the inital amount of work to be done for those examples was off by an order of magnitude!
+</p>
+
+<p>
+So much about the content...but as discussed also after the talks ended - <b>we're always looking for speakers!</b>. The meetup does not functon without some people taking a bit of time to give back to the community, to profit from others doing the same on other occasions. So please share the word on pgug.ee, and hopefully we can have some more meetups next year. Also there was a suggestion by a participant that to make it easier for newcomers, we should maybe give more ideas what would be good topics for talks. So here some hints:
+</p>
+
+<ul>
+<li>First impressions on Postgres after switching over from database system X</li>
+<li>My database migration success story</li>
+<li>My failure story of a failed backup / HA setup</li>
+<li>Road to good performance with tuning or scaling tricks</li>
+<li>Making ORM X play nicely with Postgres</li>
+<li>Fighting with Java or language X PostgreSQL driver</li>
+<li>How to use a great Business Analytics tool X with Postgres</li>
+<li>Implementing spatial systems with PostGIS</li>
+</ul>
+
+<br />
+By the way: a great resource for ideas (and learning) is the PostgreSQL Wiki with it's <a target="_blank" href="https://wiki.postgresql.org/wiki/PostgreSQL_Related_Slides_and_Presentations">"Presentations" section</a>. 
+<p>
+    And as last, a short reminder as usual:
+    <ul>
+        <li>
+            Signup to our <b>mailing list</b> at
+            <a target="_blank" href="https://groups.google.com/d/forum/pgug-ee">google groups</a>
+        </li>
+
+        <li><b>Photos</b> from event are at
+    <a target="_blank" href="https://photos.app.goo.gl/nL2DdEYWbsE1LmCJ6">Google Photos</a>, and
+    <b>you</b> could upload yours photos there too!
+</li>
+<li>
+    If you have some topic for a talk (or even just an idea, we can help with weedback etc) then definitely
+    <a  target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeypqwYeevnHHrjlhzzSqGRuAVjQvCWr0oMmj_44VSSAFjXNw/viewform">
+        submit your talk!
+    </a>
+</li>
+<li>
+    Bookmark our website <a target="_blank" href="http://pgug.ee">pgug.ee</a>
+</li>
+</ul>
+</p>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-87290833-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
